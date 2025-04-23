@@ -50,6 +50,11 @@ Stake Stats has a bet archive organizer and downloader that anyone can use, even
 
 Additionally, for power users who may want to process the downloads themselves, there is the urltool.js which will output a list of the download urls, rather than actually downloading from those urls. You do not need to use that if you don't know how. 
 
+## Issues/Errors
+
+If it's saying the fetch failed, then it's not retrieving the correct URL from the page you're on. Ensure that you're on the correct page (stake.*/transactions/archive), and if that fails but you can still see the popup, click the cog button on the window and set the 'preferred domain' to be the one you want. It should work after that.
+
+If it still doesn't work, open an issue in the github and tell me what it's doing or where it fails.
 
 - rubyatmidnight
 
