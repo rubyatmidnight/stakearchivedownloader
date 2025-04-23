@@ -8,7 +8,9 @@ This tool has been updated and made a lot easier for anyone to use; I haven't ve
 This tool now uses [Tampermonkey](https://www.tampermonkey.net/) for ease of use, please download the Tampermonkey extension for your browser:
 
 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
+
 [Chrome/Edge](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+
 [Safari](https://apps.apple.com/us/app/tampermonkey/id6738342400)
 
 ---
