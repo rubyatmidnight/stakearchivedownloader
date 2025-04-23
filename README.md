@@ -1,57 +1,57 @@
-# stakeusarchivedl
-stake.us Game Archive Downloader Tool
+# Stake Game Archive Downloader Tool
 
 
-This is a javascript tool for use with less tediously downloading your personal game archives from stake.us.
-This tool may be usable with .com as well, if you just change the instance of '.us' with '.com' in the code, which should not be hard to do.
+Updated 4/23/2025
 
+This tool has been updated and made a lot easier for anyone to use; I haven't verified whether it's usable on mobile (or safari) yet! It should be. For mobile, follow exactly the same steps; you can still download extensions to your mobile browser.
 
-# Instructions
+This tool now uses [Tampermonkey](https://www.tampermonkey.net/) for ease of use, please download the Tampermonkey extension for your browser:
 
-Open to your game archive: https://stake.us/transactions/archive
+[Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
+[Chrome/Edge](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+[Safari](https://apps.apple.com/us/app/tampermonkey/id6738342400)
 
-Open the console. It may give you a warning, and you should read it and be sure you want to run this script, do not run js scripts haphazardly through important websites.
+---
 
-Paste the code in to the console. (you do not need to download the js file, only paste the code from https://github.com/rubyatmidnight/stakeusarchivedl/blob/main/usarchivedl.js
+## Instructions
 
-![image](https://github.com/user-attachments/assets/c16afdfd-61d1-412d-82b8-d0621ad7f08f)
+1. Install Tampermonkey (see download links above).
 
-Click 'run'.
-Clear the console, and then type: `startDownloader()`. It will start from the most recent archive, and go down, and then through each page until it reaches the end.
+2. Open the Tampermonkey dashboard
 
-For active users, this may take some time. The script is designed to not be aggressive against the website and shouldn't be detected as a bot, or ddosing, or anything like that. I have tested it and it downloaded everything fine.
+3. Click 'create a new script' (the boxed + symbol in the tabs next to settings)
 
-Each archive has a cooldown of about 1 second between requests, and each page is turned in 2 seconds, so on average, each page takes about 12 seconds- A month should take around half a minute, then. So it should be about 20 minutes for the most active user. 
+4. Paste the entirety of the archivedownloader.js code in, and enable it.
 
-However, you don't have to do anything while this is going, and can safely leave it on another window or in the background. 
+5. Open to your game archive: [Stake.us](https://stake.us/transactions/archive) / [Stake.com](https://stake.com/transactions/archive) / Or any mirror site: https://stake.*/transactions/archive
 
-If for some reason you want to stop it and don't want to close your browser, type `stopDownloader()` in the same way, and click run again.
+5a. Optional: Disable the downloading flyout window when a new download is started in your browser settings; as it will be downloading all your archives, and will pop up every time. This may not be possible on Firefox, but on Chrome, you can disable 'show downloads when they're done' in the browser settings. Alternatively, just leave for a few minutes.
 
-It will download each file, and name each one its respective date, rather than the archive ID. 
+6. You should see a little popup window in the bottom right of your screen while on any of the Stake websites. While on the game archives page 1, just click start. It will move through each page and download until it reaches the end of the archives. 
 
-It will put them into the downloads folder. 
+7. Wait...
 
-# URL Downloader Tool (archiveurlcollector.js)
+8. Once it's done, disable the script in Tampermonkey, or disable Tampermonkey altogether. This only needs to run once, and then you can enable it again in the future if you need to download them further. You now have every bet archive for that account downloaded, and renamed to be the date of the archive. 
 
-This version of the tool ONLY downloads the respective urls that the archives will come from. This is useful if you just want to mass download them later.
+---
 
-As long as you have the URLs, you don't need cookie authorization, so be careful who you give everything to if you don't want them to have your bet archive data. The only personal information within these files, as far as I understand, is the IP of the bet location. 
+## Use-cases
 
-# Information about the bet archives
+What are these useful for? These contain all the bets you have made in json. They can be verified for validity, or used to build histories for your gameplay. 
 
-These come in json files and some are extremely long, and need to be parsed more easily using a json formatter or some filtering tool. 
+Stake Stats has a bet archive organizer and downloader that anyone can use, even without a subscription. 
 
-[As an example, you could do something like this, where you find all of the dragon tower results from the file, and summarize them more elegantly.](https://github.com/rubyatmidnight/provably/blob/main/dragontowerjsonextract.py)
-
-An online tool can also be used, like the [Stake Stats bet archive analyzer](https://stakestats.net/stake/tools/betarchive), but I in general suggest privacy. 
+[Stake Stats bet archive analyzer](https://stakestats.net/stake/tools/betarchive)
 
 ![image](https://github.com/user-attachments/assets/6fbd544a-a4f5-4d49-8452-da01d159065f)
 
 
+Additionally, for power users who may want to process the downloads themselves, there is the urltool.js which will output a list of the download urls, rather than actually downloading from those urls. You do not need to use that if you don't know how. 
+
+
 - rubyatmidnight
 
-If I saved you a few minutes (time is money), consider donating, but this is never required: 
+If this was useful to you, here is my LTC address: 
+ltc: `LUUcDEtCA4XEomX8JBAcu7eVB2Ko6wY5gW`
 
-ltc: LW3s8qAXRcwWNP3DJ96kCrkm3sHBRMzpWu
-
-disclaimer: yeah i had ai do some of it hehe
+Or consider [Stake Stats Premium](https://stakestats.net/stake/offers) for faster processing of your files. 
