@@ -1,5 +1,9 @@
 # Stake Game Archive Downloader Tool
 
+This tool is courtesy of SealStats, and is free to use and open source, and you are not required to use stakestats.net's services nor does this use or collect your data in any way, without you uploading them to the stakestats.net website. 
+
+
+
 
 Updated 6/15/2025
 
