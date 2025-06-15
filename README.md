@@ -1,6 +1,13 @@
 # Stake Game Archive Downloader Tool
 
 
+Updated 6/15/2025
+
+This is now the official 2.0 semi-complete version of the archiver. Unfortunately, this version does not work while on a VPN, and if you are geo-locked, it won't let you access the api at all, meaning you probably can't use this properly. This may be hit or miss depending on the user and the VPN/location they are using. 
+
+
+
+
 Updated 4/23/2025
 
 This tool has been updated and made a lot easier for anyone to use; I haven't verified whether it's usable on mobile (or safari) yet! It should be. For mobile, follow exactly the same steps; you can still download extensions to your mobile browser.
@@ -11,7 +18,7 @@ This tool now uses [Tampermonkey](https://www.tampermonkey.net/) for ease of use
 
 [Chrome/Edge](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
-[Safari](https://apps.apple.com/us/app/tampermonkey/id6738342400)
+[Safari](https://apps.apple.com/us/app/tampermonkey/id6738342400) (NOT TESTED)
 
 ---
 
@@ -48,7 +55,10 @@ Stake Stats has a bet archive organizer and downloader that anyone can use, even
 ![image](https://github.com/user-attachments/assets/6fbd544a-a4f5-4d49-8452-da01d159065f)
 
 
-Additionally, for power users who may want to process the downloads themselves, there is the urltool.js which will output a list of the download urls, rather than actually downloading from those urls. You do not need to use that if you don't know how. 
+
+Additionally, for power users who may want to process the downloads themselves, there is the urltool.js in the deprecated folder which will output a list of the download urls, rather than actually downloading from those urls. You do not need to use that if you don't know how. 
+^ This has not been maintained, and does not work. 
+
 
 ## Issues/Errors
 
