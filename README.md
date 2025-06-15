@@ -71,4 +71,4 @@ If it still doesn't work, open an issue in the github and tell me what it's doin
 If this was useful to you, here is my LTC address: 
 ltc: `LUUcDEtCA4XEomX8JBAcu7eVB2Ko6wY5gW`
 
-Or consider [Stake Stats Premium](https://stakestats.net/stake/offers) for faster processing of your files. 
+Or consider [Seal Stats Premium](https://stakestats.net/stake/offers) for faster processing of your files. 
